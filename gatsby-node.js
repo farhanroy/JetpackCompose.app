@@ -76,12 +76,29 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     return edges.node;
   });
 
+  qnaArray.map((qna) => {
+    const question = String(qna.question)
+    // Get rid of the question mark and replace spaces with "-"
+    const normalizedQuestion = question.replace(/\?/g, "").replace(/ /g, "-");
+    
+    createPage({
+      path: `/${normalizedQuestion}`,
+      component: require.resolve("./src/components/faq/FAQ.tsx"),
+      context: {
+        qnaArray: qnaArray,
+        lastUpdateDate: new Date().toISOString().slice(0, 10),
+        currentQuestion: question,
+      },
+    });
+  });
+
   createPage({
     path: "/faq",
     component: require.resolve("./src/components/faq/FAQ.tsx"),
     context: {
       qnaArray: qnaArray,
       lastUpdateDate: new Date().toISOString().slice(0, 10),
+      currentQuestion: ""
     },
   });
 

@@ -6,10 +6,11 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Helmet } from "react-helmet";
 import JetpackComposeAppFooter from "../core/JetpackComposeAppFooter";
 import { makeStyles } from "@material-ui/core/styles";
+import { navigate } from "gatsby";
 import NavigationBar from "../core/NavigationBar";
 import parse from "html-react-parser";
 import PageTitle from "../core/PageTitle";
-import React from "react";
+import React, {useRef} from "react";
 import Typography from "@material-ui/core/Typography";
 import { RouteComponentProps } from "@reach/router";
 
@@ -17,11 +18,14 @@ interface FAQPageComponentProps extends RouteComponentProps {
   pageContext: {
     qnaArray: [any];
     lastUpdateDate: string;
+    currentQuestion: string
   };
 }
 
 export default function FAQPageComponent(props: FAQPageComponentProps) {
   const classes = useStyles();
+  const executeScroll = () => ref.current.scrollIntoView()   
+
   return (
     <>
       <Helmet>
@@ -56,24 +60,40 @@ export default function FAQPageComponent(props: FAQPageComponentProps) {
             <Typography className={classes.lastUpdated} align="center">
               Last updated: {props.pageContext.lastUpdateDate}
             </Typography>
-            {props.pageContext.qnaArray.map((qna) => (
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
+            {props.pageContext.qnaArray.map((qna) => {
+              return (
+                <Accordion
+                  expanded={qna.question === props.pageContext.currentQuestion}
+                  onChange={(event, expanded) => {
+                    if (expanded) {
+                      navigate("/" + qna.question.replace(/\?/g, "").replace(/ /g, "-"));
+                    } else {
+                      navigate("/faq");
+                    }
+                  }}
+  
                 >
-                  <Typography className={classes.question}>
-                    {parse(qna.question)}
-                  </Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography className={classes.answer}>
-                    {parse(qna.answer)}
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-            ))}
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header"
+                  >
+                    <Typography className={classes.question}>
+                      {parse(qna.question)}
+                    </Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography className={classes.answer}>
+                      {parse(qna.answer)}
+                    </Typography>
+                  </AccordionDetails>
+                </Accordion>
+              )
+            }
+            
+            )
+            
+            }
           </Container>
 
           <div className={classes.footer}>
