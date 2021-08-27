@@ -29,7 +29,9 @@ export default function FAQPageComponent(props: FAQPageComponentProps) {
   return (
     <>
       <Helmet>
-        <title>Frequently Asked Questions about Jetpack Compose</title>
+        <title>
+            {!(props.pageContext.currentQuestion.length === 0) ? props.pageContext.currentQuestion : "Frequently Asked Questions about Jetpack Compose"}
+        </title>
         <meta
           name="description"
           content="Find answers to frequently asked questions about Jetpack Compose!"
