@@ -5,7 +5,7 @@
   },
   {
     "question": "Can I start using Jetpack Compose in production apps",
-    "answer": "Compose is ready to be used in production and many apps are already working on migrating their apps in production to embrace Compose."
+    "answer": "Compose is ready to be used in production and many apps are already working on migrating their apps in production to embrace Compose. Here are some <a target='_blank' href='https://developer.android.com/jetpack/compose/why-adopt'>testimonials</a> from companies that have started using Jetpack Compose."
   },
   {
     "question": "Will Fragments be deprecated once Compose is released?",
