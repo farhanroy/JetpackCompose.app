@@ -87,7 +87,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       context: {
         qnaArray: qnaArray,
         lastUpdateDate: new Date().toISOString().slice(0, 10),
-        currentQuestion: question,
+        currentQnA: qna,
       },
     });
   });
@@ -98,7 +98,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     context: {
       qnaArray: qnaArray,
       lastUpdateDate: new Date().toISOString().slice(0, 10),
-      currentQuestion: ""
+      currentQnA: null
     },
   });
 

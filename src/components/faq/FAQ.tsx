@@ -13,38 +13,41 @@ import PageTitle from "../core/PageTitle";
 import React, {useRef} from "react";
 import Typography from "@material-ui/core/Typography";
 import { RouteComponentProps } from "@reach/router";
+import QnA from "../../models/QnA";
 
 interface FAQPageComponentProps extends RouteComponentProps {
   pageContext: {
     qnaArray: [any];
     lastUpdateDate: string;
-    currentQuestion: string
+    currentQnA?: QnA
   };
 }
 
 export default function FAQPageComponent(props: FAQPageComponentProps) {
   const classes = useStyles();
-  const executeScroll = () => ref.current.scrollIntoView()   
+  const executeScroll = () => ref.current.scrollIntoView()  
+  const title = !(props.pageContext.currentQnA?.question.length === 0) ? props.pageContext.currentQnA?.question : "Frequently Asked Questions about Jetpack Compose"
+  const description = !(props.pageContext.currentQnA?.answer.length === 0) ? props.pageContext.currentQnA?.answer : "Find answers to frequently asked questions about Jetpack Compose!"
 
   return (
     <>
       <Helmet>
         <title>
-            {!(props.pageContext.currentQuestion.length === 0) ? props.pageContext.currentQuestion : "Frequently Asked Questions about Jetpack Compose"}
+            {title}
         </title>
         <meta
           name="description"
-          content="Find answers to frequently asked questions about Jetpack Compose!"
+          content={description}
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://jetpackcompose.app/faq" />
         <meta
           property="twitter:title"
-          content="Frequently Asked Questions about Jetpack Compose"
+          content={title}
         />
         <meta
           property="twitter:description"
-          content="Find answers to frequently asked questions about Jetpack Compose!"
+          content={description}
         />
         <meta
           property="twitter:image"
@@ -65,7 +68,7 @@ export default function FAQPageComponent(props: FAQPageComponentProps) {
             {props.pageContext.qnaArray.map((qna) => {
               return (
                 <Accordion
-                  expanded={qna.question === props.pageContext.currentQuestion}
+                  expanded={qna.question === props.pageContext.currentQnA?.question}
                   onChange={(event, expanded) => {
                     if (expanded) {
                       navigate("/" + qna.question.replace(/\?/g, "").replace(/ /g, "-"));
