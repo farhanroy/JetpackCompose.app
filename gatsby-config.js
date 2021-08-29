@@ -35,6 +35,7 @@ module.exports = {
           `Roboto`,
           `Playfair%20Display`,
           `Merriweather`,
+          `Nunito+Sans`,
         ],
         display: "swap",
       },

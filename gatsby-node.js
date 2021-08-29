@@ -208,9 +208,9 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     },
   });
 
-  /* Writing Page Generation */
+  /* Articles Page Generation */
   createPage({
-    path: "/writing",
-    component: require.resolve("./src/components/writing/Writing.tsx"),
+    path: "/articles",
+    component: require.resolve("./src/components/articles/Articles.tsx"),
   });
 };
