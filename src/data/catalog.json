@@ -541,5 +541,17 @@
       "Canvas",
       "Examples"
     ]
+  },
+  {
+    "id": "https://github.com/theapache64/create-compose-app",
+    "title": "Create Compose App",
+    "description": "⌨️ A tool that gives you a massive head start when building Compose based apps. It saves you from time-consuming setup and configuration",
+    "contributorName": "theapache64",
+    "url": "https://github.com/theapache64/create-compose-app",
+    "imageUrl": "https://github.com/theapache64/create-compose-app/raw/master/demo_desktop.gif",
+    "addedDate": "08-29-2021",
+    "categories": [
+      "tools"
+    ]
   }
 ]
