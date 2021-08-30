@@ -46,9 +46,10 @@ function NavigationBar(props: IProps) {
           variant="scrollable"
         >
           <Link to="/" className={classes.logo}>
-            <Typography className={classes.logoText}>
-              🚀 JetpackCompose.app
-            </Typography>
+            <img
+              src="https://jetpackcompose.app/JetpackComposeApp_Logo.svg"
+              className={classes.logoImage}
+            />
           </Link>
           <Tab
             label="Compose Catalog"
@@ -98,10 +99,8 @@ const useStyles = makeStyles({
       textDecoration: "none",
     },
   },
-  logoText: {
-    fontSize: 22,
-    fontFamily: "Libre Baskerville",
-    color: "#222222",
+  logoImage: {
+    height: "6vh",
   },
   tabs: {
     height: "10vh",
