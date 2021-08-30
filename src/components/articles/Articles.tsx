@@ -66,9 +66,9 @@ const useStyles = makeStyles({
     marginBottom: "96px",
   },
   title: {
-    fontSize: "38px",
+    fontSize: "48px",
     fontWeight: "bold",
-    fontFamily: "Merriweather",
+    fontFamily: "Nunito Sans",
     color: "#222",
     marginTop: "64px",
     marginBottom: "96px",
