@@ -33,5 +33,6 @@ const useStyles = makeStyles({
     fontWeight: 100,
     fontFamily: "Nunito Sans",
     color: "#222",
+    marginTop: 20,
   },
 });
