@@ -87,7 +87,7 @@ export default function ComponentPreviewCardsSection(
         <div className={classes.root}>
           <Container maxWidth="lg">
             <Grid container spacing={2}>
-              <Grid container justify="center" spacing={2}>
+              <Grid container justify="center">
                 <Grid key={"pageTitle"} item xs={12} md={6}>
                   <PageTitle
                     header="Jetpack Compose Catalog"
@@ -165,7 +165,6 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: "5%",
   },
   title: {
     marginBottom: 0,

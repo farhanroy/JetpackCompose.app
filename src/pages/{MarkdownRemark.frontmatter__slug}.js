@@ -17,7 +17,10 @@ export default function ArticlePost({
         <title>{frontmatter.title}</title>
         <meta name="description" content={frontmatter.description} />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://jetpackcompose.app/faq" />
+        <meta
+          property="twitter:url"
+          content={"https://jetpackcompose.app" + frontmatter.slug}
+        />
         <meta property="twitter:title" content={frontmatter.title} />
         <meta
           property="twitter:description"

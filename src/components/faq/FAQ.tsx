@@ -55,12 +55,14 @@ export default function FAQPageComponent(props: FAQPageComponentProps) {
               header="Frequently Asked Questions"
               subheader="Find answers to frequently asked questions about Jetpack Compose!"
             />
-            <Typography className={classes.lastUpdated} align="center">
+            {/* Removing last update date for now 
+            {/* <Typography className={classes.lastUpdated} align="center">
               Last updated: {props.pageContext.lastUpdateDate}
-            </Typography>
+            </Typography> */}
             {props.pageContext.qnaArray.map((qna) => {
               return (
                 <Accordion
+                  variant="outlined"
                   expanded={
                     qna.question === props.pageContext.currentQnA?.question
                   }
@@ -105,7 +107,6 @@ export default function FAQPageComponent(props: FAQPageComponentProps) {
 const useStyles = makeStyles({
   root: {
     width: "100%",
-    marginTop: "5%",
   },
   lastUpdated: {
     fontSize: 15,
@@ -115,6 +116,7 @@ const useStyles = makeStyles({
   question: {
     fontSize: 20,
     fontFamily: "Playfair Display",
+    color: "#222",
     "& span": {
       fontSize: 16,
     },
@@ -124,7 +126,8 @@ const useStyles = makeStyles({
   },
   answer: {
     fontSize: 18,
-    fontFamily: "Roboto",
+    fontFamily: "Nunito Sans",
+    color: "#222",
     "& a": {
       color: "#FFFFFF",
       background: "#81c1eb",

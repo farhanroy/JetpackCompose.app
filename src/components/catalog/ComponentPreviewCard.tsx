@@ -18,67 +18,71 @@ export interface ComponentPreviewCardProps {
   githubStars?: number;
 }
 
-export const ComponentPreviewCard: FunctionComponent<ComponentPreviewCardProps> = (
-  props
-) => {
-  const classes = useStyles();
-  return (
-    <>
-      <Card
-        className={classes.root}
-        onClick={() => {
-          window.open(props.resourceLink, "_blank");
-        }}
-      >
-        <CardMedia className={clsx(classes.media)} image={props.imageUrl} />
-        <CardContent className={classes.cardContent}>
-          <Grid
-            container
-            className={classes.cardContentGrid}
-            wrap="nowrap"
-            direction="column"
-          >
-            <Grid item className={classes.cardTitleGrid}>
-              <Grid container className={classes.cardContentGrid} wrap="nowrap">
-                <Grid item xs={10}>
-                  <Typography className={classes.cardTitle}>
-                    {props.title}
-                  </Typography>
-                </Grid>
-                {props.githubStars ? (
-                  <Grid item xs={2} className={classes.starGridRow}>
-                    <StarBorderRounded
-                      className={classes.starIcon}
-                      fontSize="small"
-                    />
-                    <Typography className={classes.starText}>
-                      {props.githubStars}
+export const ComponentPreviewCard: FunctionComponent<ComponentPreviewCardProps> =
+  (props) => {
+    const classes = useStyles();
+    return (
+      <>
+        <Card
+          className={classes.root}
+          variant="outlined"
+          onClick={() => {
+            window.open(props.resourceLink, "_blank");
+          }}
+        >
+          <CardMedia className={clsx(classes.media)} image={props.imageUrl} />
+          <CardContent className={classes.cardContent}>
+            <Grid
+              container
+              className={classes.cardContentGrid}
+              wrap="nowrap"
+              direction="column"
+            >
+              <Grid item className={classes.cardTitleGrid}>
+                <Grid
+                  container
+                  className={classes.cardContentGrid}
+                  wrap="nowrap"
+                >
+                  <Grid item xs={10}>
+                    <Typography className={classes.cardTitle}>
+                      {props.title}
                     </Typography>
-                    {/* <span className={classes.starText}>
+                  </Grid>
+                  {props.githubStars ? (
+                    <Grid item xs={2} className={classes.starGridRow}>
+                      <StarBorderRounded
+                        className={classes.starIcon}
+                        fontSize="small"
+                      />
+                      <Typography className={classes.starText}>
+                        {props.githubStars}
+                      </Typography>
+                      {/* <span className={classes.starText}>
                       {props.githubStars}
                     </span> */}
-                  </Grid>
-                ) : (
-                  ""
-                )}
+                    </Grid>
+                  ) : (
+                    ""
+                  )}
+                </Grid>
+              </Grid>
+              <Grid item className={classes.cardTitleGrid}>
+                <Typography className={classes.cardSubtitle}>
+                  {props.description}
+                </Typography>
+              </Grid>
+              <Grid item className={classes.cardChipGrid}>
+                {props.categories.map((element) => (
+                  <span className={classes.chip}>{element}</span>
+                ))}
               </Grid>
             </Grid>
-            <Grid item className={classes.cardTitleGrid}>
-              <Typography className={classes.cardSubtitle}>
-                {props.description}
-              </Typography>
-            </Grid>
-            <Grid item className={classes.cardChipGrid}>
-              {props.categories.map((element) => (
-                <span className={classes.chip}>{element}</span>
-              ))}
-            </Grid>
-          </Grid>
-        </CardContent>
-      </Card>
-    </>
-  );
-};
+          </CardContent>
+        </Card>
+      </>
+    );
+  };
 
 const useStyles = makeStyles({
   root: {
@@ -86,6 +90,7 @@ const useStyles = makeStyles({
     "&:hover": {
       cursor: "pointer",
     },
+    borderRadius: 12,
   },
   media: {
     height: 0,

@@ -1,6 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 
 interface PageTitleProps {
   header: string;
@@ -10,27 +9,29 @@ interface PageTitleProps {
 export default function PageTitle(props: PageTitleProps) {
   const classes = useStyles();
   return (
-    <>
-      <Typography className={classes.pageHeader} align="center">
-        {props.header}
-      </Typography>
-      <Typography className={classes.pageSubheader} align="center">
-        {props.subheader}
-      </Typography>
-    </>
+    <div className={classes.root}>
+      <div className={classes.title}>{props.header}</div>
+      <div className={classes.subtitle}>{props.subheader}</div>
+    </div>
   );
 }
 
 const useStyles = makeStyles({
-  pageHeader: {
-    fontSize: 30,
-    fontFamily: "Playfair Display",
-    marginBottom: "2%",
-    color: "#78C257",
+  root: {
+    marginTop: "64px",
+    marginBottom: "96px",
+    textAlign: "center",
   },
-  pageSubheader: {
-    fontSize: 20,
-    fontWeight: "lighter",
-    fontFamily: "Roboto",
+  title: {
+    fontSize: "48px",
+    fontWeight: "bold",
+    fontFamily: "Nunito Sans",
+    color: "#222",
+  },
+  subtitle: {
+    fontSize: "20px",
+    fontWeight: 100,
+    fontFamily: "Nunito Sans",
+    color: "#222",
   },
 });
