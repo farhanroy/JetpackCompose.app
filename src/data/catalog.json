@@ -7,7 +7,10 @@
     "url": "https://github.com/airbnb/Showkase",
     "imageUrl": "https://github.com/airbnb/Showkase/raw/master/assets/showkase_demo.gif",
     "addedDate": "10-19-2020",
-    "categories": ["Library", "Design System"]
+    "categories": [
+      "Library",
+      "Design System"
+    ]
   },
   {
     "id": "https://github.com/google/accompanist",
@@ -15,9 +18,12 @@
     "description": "A collection of extension libraries for Jetpack Compose",
     "contributorName": "Chris Banes",
     "url": "https://github.com/google/accompanist",
-    "imageUrl": "https://github.com/google/accompanist/raw/main/picasso/images/crossfade.gif",
+    "imageUrl": "https://raw.githubusercontent.com/google/accompanist/main/docs/insets/images/ime-scroll.gif",
     "addedDate": "10-19-2020",
-    "categories": ["Library", "Image Loading"]
+    "categories": [
+      "Library",
+      "Image Loading"
+    ]
   },
   {
     "id": "https://github.com/alexjlockwood/bees-and-bombs-compose",
@@ -27,7 +33,10 @@
     "url": "https://github.com/alexjlockwood/bees-and-bombs-compose",
     "imageUrl": "https://github.com/alexjlockwood/bees-and-bombs-compose/raw/master/art/ring-of-circles-compose.gif",
     "addedDate": "10-19-2020",
-    "categories": ["Animation", "Examples"]
+    "categories": [
+      "Animation",
+      "Examples"
+    ]
   },
   {
     "id": "https://github.com/ditn/Doom-Compose",
@@ -37,7 +46,9 @@
     "url": "https://github.com/ditn/Doom-Compose",
     "imageUrl": "https://camo.githubusercontent.com/669fe429582c4bb6f07dfc31be08db973498a149/68747470733a2f2f6164616d62656e6e6574742e6465762f696d672f646f6f6d2d636f6d706f73652d66696e616c2e676966",
     "addedDate": "10-19-2020",
-    "categories": ["Animation"]
+    "categories": [
+      "Animation"
+    ]
   },
   {
     "id": "https://github.com/ErikHellman/MarkdownComposer",
@@ -47,7 +58,11 @@
     "url": "https://github.com/ErikHellman/MarkdownComposer",
     "imageUrl": "https://www.hellsoft.se/content/images/2020/09/Screenshot_1599569930-1.png",
     "addedDate": "10-19-2020",
-    "categories": ["Text", "Markdown", "Examples"]
+    "categories": [
+      "Text",
+      "Markdown",
+      "Examples"
+    ]
   },
   {
     "id": "https://github.com/zach-klippenstein/compose-backstack",
@@ -57,7 +72,10 @@
     "url": "https://github.com/zach-klippenstein/compose-backstack",
     "imageUrl": "https://github.com/zach-klippenstein/compose-backstack/raw/main/.images/inspector.gif",
     "addedDate": "10-19-2020",
-    "categories": ["Library", "Navigation"]
+    "categories": [
+      "Library",
+      "Navigation"
+    ]
   },
   {
     "id": "https://github.com/vinaygaba/Learn-Jetpack-Compose-By-Example",
@@ -67,7 +85,10 @@
     "url": "https://github.com/vinaygaba/Learn-Jetpack-Compose-By-Example",
     "imageUrl": "https://media3.giphy.com/media/mOIstBqbjMm2CdR5EX/giphy.gif",
     "addedDate": "10-19-2020",
-    "categories": ["Examples", "Tutorial"]
+    "categories": [
+      "Examples",
+      "Tutorial"
+    ]
   },
   {
     "id": "https://github.com/JakeWharton/mosaic",
@@ -77,7 +98,9 @@
     "url": "https://github.com/JakeWharton/mosaic",
     "imageUrl": "https://github.com/JakeWharton/mosaic/raw/trunk/samples/jest/demo.svg",
     "addedDate": "08-12-2021",
-    "categories": ["Console UI"]
+    "categories": [
+      "Console UI"
+    ]
   },
   {
     "id": "https://github.com/zsoltk/compose-router",
@@ -87,7 +110,10 @@
     "url": "https://github.com/zsoltk/compose-router",
     "imageUrl": "https://camo.githubusercontent.com/28be1ae2d7e263c64e28a27df28d2434f50dc104/68747470733a2f2f692e696d6775722e636f6d2f6b4b63414861332e706e67",
     "addedDate": "10-19-2020",
-    "categories": ["Library", "Navigation"]
+    "categories": [
+      "Library",
+      "Navigation"
+    ]
   },
   {
     "id": "https://github.com/adibfara/ComposeClock",
@@ -97,7 +123,9 @@
     "url": "https://github.com/adibfara/ComposeClock",
     "imageUrl": "https://raw.githubusercontent.com/adibfara/ComposeClock/master/demo.gif",
     "addedDate": "10-19-2020",
-    "categories": ["Animation"]
+    "categories": [
+      "Animation"
+    ]
   },
   {
     "id": "https://github.com/vipulasri/JetInstagram",
@@ -107,7 +135,9 @@
     "url": "https://github.com/vipulasri/JetInstagram",
     "imageUrl": "https://github.com/vipulasri/JetInstagram/raw/master/art/jetinstagram.gif",
     "addedDate": "10-19-2020",
-    "categories": ["Examples"]
+    "categories": [
+      "Examples"
+    ]
   },
   {
     "id": "https://github.com/CaelumF/FigmaToCompose",
@@ -117,7 +147,9 @@
     "url": "https://github.com/CaelumF/FigmaToCompose",
     "imageUrl": "https://i.imgur.com/esrcpzS.gif",
     "addedDate": "10-19-2020",
-    "categories": ["Figma Plugin"]
+    "categories": [
+      "Figma Plugin"
+    ]
   },
   {
     "id": "https://github.com/Gurupreet/ComposeCookBook",
@@ -127,7 +159,9 @@
     "url": "https://github.com/Gurupreet/ComposeCookBook",
     "imageUrl": "https://camo.githubusercontent.com/f8e511c80001e2d4014cc0ed09d6520f9606dad9/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f705a667777774f6c4b517469794a465072322f67697068792e676966",
     "addedDate": "10-19-2020",
-    "categories": ["Examples"]
+    "categories": [
+      "Examples"
+    ]
   },
   {
     "id": "https://github.com/halilozercan/compose-richtext",
@@ -136,7 +170,10 @@
     "url": "https://github.com/halilozercan/compose-richtext",
     "imageUrl": "https://i.ibb.co/kGMccBy/compose-richtext.gif",
     "addedDate": "10-19-2020",
-    "categories": ["Text", "Markdown"],
+    "categories": [
+      "Text",
+      "Markdown"
+    ],
     "description": "A collection of Compose libraries for working with rich text formatting and documents"
   },
   {
@@ -147,7 +184,9 @@
     "url": "https://github.com/hitherejoe/ComposeAcademy",
     "imageUrl": "https://github.com/hitherejoe/ComposeAcademy/raw/master/compose_academy.png",
     "addedDate": "10-19-2020",
-    "categories": ["Examples"]
+    "categories": [
+      "Examples"
+    ]
   },
   {
     "id": "https://github.com/vipulasri/JetDelivery",
@@ -157,7 +196,9 @@
     "url": "https://github.com/vipulasri/JetDelivery",
     "imageUrl": "https://github.com/vipulasri/JetDelivery/raw/master/art/screenshot-framed-1.png",
     "addedDate": "10-19-2020",
-    "categories": ["Examples"]
+    "categories": [
+      "Examples"
+    ]
   },
   {
     "id": "https://github.com/skydoves/Orchestra",
@@ -167,7 +208,10 @@
     "url": "https://github.com/skydoves/Orchestra",
     "imageUrl": "https://user-images.githubusercontent.com/24237865/61194943-f9d70380-a6ff-11e9-807f-ba1ca8126f8a.gif",
     "addedDate": "10-19-2020",
-    "categories": ["Color Picker", "Spinner"]
+    "categories": [
+      "Color Picker",
+      "Spinner"
+    ]
   },
   {
     "id": "https://github.com/zsoltk/compose-pokedex",
@@ -177,7 +221,9 @@
     "url": "https://github.com/zsoltk/compose-pokedex",
     "imageUrl": "https://camo.githubusercontent.com/a2d81c31dbdfb1f81b981eee543e14c1d55a1ef9/68747470733a2f2f696d6775722e636f6d2f497470757152682e706e67",
     "addedDate": "10-19-2020",
-    "categories": ["Examples"]
+    "categories": [
+      "Examples"
+    ]
   },
   {
     "id": "https://github.com/mobnetic/compose-shared-element",
@@ -187,7 +233,10 @@
     "url": "https://github.com/mobnetic/compose-shared-element",
     "imageUrl": "https://github.com/mobnetic/compose-shared-element/raw/master/screenshots/TransitionAnimation.gif",
     "addedDate": "10-20-2020",
-    "categories": ["Navigation", "Animation"]
+    "categories": [
+      "Navigation",
+      "Animation"
+    ]
   },
   {
     "id": "https://github.com/Foso/Jetpack-Compose-Playground",
@@ -197,7 +246,9 @@
     "url": "https://github.com/Foso/Jetpack-Compose-Playground",
     "imageUrl": "https://github.com/Foso/Jetpack-Compose-Playground/raw/master/docs/images/readme/ControlledScrollDemo.png",
     "addedDate": "10-20-2020",
-    "categories": ["Examples"]
+    "categories": [
+      "Examples"
+    ]
   },
   {
     "id": "https://github.com/wajahatkarim3/DinoCompose",
@@ -207,7 +258,10 @@
     "url": "https://github.com/wajahatkarim3/DinoCompose",
     "imageUrl": "https://github.com/wajahatkarim3/DinoCompose/raw/master/DinoDemo.gif",
     "addedDate": "10-20-2020",
-    "categories": ["Examples", "Game"]
+    "categories": [
+      "Examples",
+      "Game"
+    ]
   },
   {
     "id": "https://github.com/alexjlockwood/android-2048-compose",
@@ -217,7 +271,10 @@
     "url": "https://github.com/alexjlockwood/android-2048-compose",
     "imageUrl": "https://github.com/alexjlockwood/android-2048-compose/raw/master/art/twenty-forty-eight.gif",
     "addedDate": "10-20-2020",
-    "categories": ["Examples", "Game"]
+    "categories": [
+      "Examples",
+      "Game"
+    ]
   },
   {
     "id": "https://github.com/Popalay/Retrogamer-Compose",
@@ -226,7 +283,10 @@
     "url": "https://github.com/Popalay/Retrogamer-Compose",
     "imageUrl": "https://github.com/Popalay/Retrogamer-Compose/raw/master/art/sample.gif",
     "addedDate": "10-20-2020",
-    "categories": ["Examples", "Game"],
+    "categories": [
+      "Examples",
+      "Game"
+    ],
     "contributorName": "Denys Nykyforov"
   },
   {
@@ -237,7 +297,9 @@
     "url": "https://github.com/pocmo/recompose",
     "imageUrl": "https://github.com/pocmo/recompose/raw/main/demo.gif",
     "addedDate": "10-20-2020",
-    "categories": ["Tool"]
+    "categories": [
+      "Tool"
+    ]
   },
   {
     "id": "https://github.com/square/radiography",
@@ -247,7 +309,9 @@
     "url": "https://github.com/square/radiography",
     "imageUrl": "https://github.com/square/radiography/raw/main/assets/compose_sample_screenshot.png",
     "addedDate": "10-20-2020",
-    "categories": ["Library"]
+    "categories": [
+      "Library"
+    ]
   },
   {
     "id": "https://github.com/android/compose-samples",
@@ -256,7 +320,9 @@
     "url": "https://github.com/android/compose-samples",
     "imageUrl": "https://github.com/android/compose-samples/raw/main/Jetcaster/docs/jetcaster.gif",
     "addedDate": "10-21-2020",
-    "categories": ["Examples"],
+    "categories": [
+      "Examples"
+    ],
     "contributorName": "Google"
   },
   {
@@ -267,7 +333,10 @@
     "url": "https://github.com/Bruno125/Compose-Challenges",
     "imageUrl": "https://github.com/Bruno125/Compose-Challenges/raw/main/assets/flappy-animation.gif",
     "addedDate": "10-21-2020",
-    "categories": ["Examples", "Animation"]
+    "categories": [
+      "Examples",
+      "Animation"
+    ]
   },
   {
     "id": "https://github.com/ashar-7/JetMessenger",
@@ -277,7 +346,9 @@
     "url": "https://github.com/ashar-7/JetMessenger",
     "imageUrl": "https://github.com/ashar-7/JetMessenger/raw/master/screenshots/demo.gif",
     "addedDate": "10-22-2020",
-    "categories": ["Examples"]
+    "categories": [
+      "Examples"
+    ]
   },
   {
     "id": "https://github.com/halilozercan/ComposeVideoPlayer",
@@ -287,7 +358,9 @@
     "url": "https://github.com/halilozercan/ComposeVideoPlayer",
     "imageUrl": "https://raw.githubusercontent.com/halilozercan/ComposeVideoPlayer/master/preview.gif",
     "addedDate": "10-22-2020",
-    "categories": ["Examples"]
+    "categories": [
+      "Examples"
+    ]
   },
   {
     "id": "https://github.com/alorma/Compose-Debug-Drawer",
@@ -297,7 +370,10 @@
     "url": "https://github.com/alorma/Compose-Debug-Drawer",
     "imageUrl": "https://github.com/alorma/Compose-Debug-Drawer/raw/main/art/drawer-v0.1.0-beta-02.png",
     "addedDate": "10-23-2020",
-    "categories": ["Library", "Debug Menu"]
+    "categories": [
+      "Library",
+      "Debug Menu"
+    ]
   },
   {
     "id": "https://github.com/tehras/charts",
@@ -306,7 +382,10 @@
     "url": "https://github.com/tehras/charts",
     "imageUrl": "https://github.com/tehras/charts/raw/master/assets/line_chart.gif",
     "addedDate": "10-27-2020",
-    "categories": ["Library", "Chart"],
+    "categories": [
+      "Library",
+      "Chart"
+    ],
     "title": "Charts"
   },
   {
@@ -317,7 +396,10 @@
     "url": "https://github.com/skydoves/Landscapist",
     "imageUrl": "https://user-images.githubusercontent.com/24237865/95661452-6abad480-0b6a-11eb-91c4-7cbe40b77927.gif",
     "addedDate": "11-15-2020",
-    "categories": ["Library", "Image Loading"]
+    "categories": [
+      "Library",
+      "Image Loading"
+    ]
   },
   {
     "id": "https://github.com/kazemihabib/compose-shimmer",
@@ -325,7 +407,10 @@
     "contributorName": "Habib Kazemi",
     "url": "https://github.com/kazemihabib/compose-shimmer",
     "imageUrl": "https://github.com/kazemihabib/compose-shimmer/raw/master/images/shimmer.gif?raw=true",
-    "categories": ["Library", "Shimmer"],
+    "categories": [
+      "Library",
+      "Shimmer"
+    ],
     "title": "Compose Shimmer",
     "addedDate": "12-27-2020"
   },
@@ -335,7 +420,11 @@
     "contributorName": "Carson Holzheimer",
     "url": "https://github.com/Chozzle/compose-macos-theme",
     "imageUrl": "https://github.com/Chozzle/compose-macos-theme/raw/master/screenshots/desktop.png",
-    "categories": ["Library", "Theme", "MacOS"],
+    "categories": [
+      "Library",
+      "Theme",
+      "MacOS"
+    ],
     "id": "https://github.com/Chozzle/compose-macos-theme",
     "addedDate": "1-23-2020"
   },
@@ -346,7 +435,10 @@
     "contributorName": "Gabriel Souza",
     "url": "https://github.com/DevSrSouza/compose-icons",
     "imageUrl": "https://user-images.githubusercontent.com/29736164/111044124-6b131080-8425-11eb-9b03-0d3b409377a5.png",
-    "categories": ["Library", "Icons"],
+    "categories": [
+      "Library",
+      "Icons"
+    ],
     "addedDate": "03-13-2021"
   },
   {
@@ -356,7 +448,10 @@
     "url": "https://github.com/halilozercan/compose-schedule-calendar",
     "imageUrl": "https://github.com/halilozercan/compose-schedule-calendar/raw/main/assets/demo.gif",
     "addedDate": "08-12-2021",
-    "categories": ["Library", "Calendar"],
+    "categories": [
+      "Library",
+      "Calendar"
+    ],
     "description": "Demo app for a horizontal schedule(event) calendar"
   },
   {
@@ -367,7 +462,9 @@
     "url": "https://github.com/vanpra/compose-material-dialogs",
     "imageUrl": "https://raw.githubusercontent.com/vanpra/compose-material-dialogs/main/imgs/date_and_time.png",
     "addedDate": "08-12-2021",
-    "categories": ["Dialogs"]
+    "categories": [
+      "Dialogs"
+    ]
   },
   {
     "id": "https://github.com/adrielcafe/lyricist",
@@ -377,7 +474,9 @@
     "url": "https://github.com/adrielcafe/lyricist",
     "imageUrl": "https://user-images.githubusercontent.com/2512298/129431216-9ad0124d-816f-4b99-be4f-1a8db24dae0d.png",
     "addedDate": "08-12-2021",
-    "categories": ["i18n"]
+    "categories": [
+      "i18n"
+    ]
   },
   {
     "id": "https://github.com/prafullmishra/JetComposer",
@@ -386,7 +485,10 @@
     "url": "https://github.com/prafullmishra/JetComposer",
     "imageUrl": "https://camo.githubusercontent.com/15f723df08e49285dea1f94309ac1689370bd5e21e74efcc32fa5ebcdd272ca0/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f694d445567344d4c635a6872484231726a6b2f67697068792e676966",
     "addedDate": "08-12-2021",
-    "categories": ["Animation", "Examples"],
+    "categories": [
+      "Animation",
+      "Examples"
+    ],
     "description": "Collection of UIs and Animations built with Jetpack Compose for Android"
   },
   {
@@ -397,7 +499,10 @@
     "url": "https://github.com/alorma/Compose-Settings",
     "imageUrl": "https://github.com/alorma/Compose-Settings/raw/main/docs/art/screenshot_links.jpeg",
     "addedDate": "08-12-2021",
-    "categories": ["Library", "Preferences"]
+    "categories": [
+      "Library",
+      "Preferences"
+    ]
   },
   {
     "id": "https://github.com/adrielcafe/voyager",
@@ -407,7 +512,10 @@
     "url": "https://github.com/adrielcafe/voyager",
     "imageUrl": "https://user-images.githubusercontent.com/2512298/126323588-2f970953-0adb-47f8-b2fb-91c5854656bd.gif",
     "addedDate": "08-13-2021",
-    "categories": ["Library", "Navigation"]
+    "categories": [
+      "Library",
+      "Navigation"
+    ]
   },
   {
     "id": "https://github.com/alashow/datmusic-android",
@@ -417,7 +525,9 @@
     "url": "https://github.com/alashow/datmusic-android",
     "imageUrl": "https://raw.githubusercontent.com/alashow/datmusic-android/18a37cc34de3fbf659dbd20474401ac045a97d56/art/screenshots/source/6.png",
     "addedDate": "08-13-2021",
-    "categories": ["Examples"]
+    "categories": [
+      "Examples"
+    ]
   },
   {
     "id": "https://github.com/worstkiller/jetpackcompose_canvas_icon_pack",
@@ -427,7 +537,10 @@
     "url": "https://github.com/worstkiller/jetpackcompose_canvas_icon_pack",
     "imageUrl": "https://raw.githubusercontent.com/worstkiller/jetpackcompose_canvas_icon_pack/master/screenshots/white_1.jpg",
     "addedDate": "08-21-2021",
-    "categories": ["Canvas", "Examples"]
+    "categories": [
+      "Canvas",
+      "Examples"
+    ]
   },
   {
     "id": "https://github.com/theapache64/create-compose-app",
@@ -437,6 +550,8 @@
     "url": "https://github.com/theapache64/create-compose-app",
     "imageUrl": "https://github.com/theapache64/create-compose-app/raw/master/demo_desktop.gif",
     "addedDate": "08-29-2021",
-    "categories": ["Tool"]
+    "categories": [
+      "Tool"
+    ]
   }
 ]
