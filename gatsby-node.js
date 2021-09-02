@@ -186,6 +186,27 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     }
   );
 
+  const componentCategoriesSet = new Set();
+  var grouped = componentsArray.forEach((component) => {
+    component.categories.forEach((category) => {
+      componentCategoriesSet.add(category);
+    });
+  });
+
+  componentCategoriesSet.forEach((category) => {
+    createPage({
+      path: `/${category}-libraries-in-Jetpack-Compose`,
+      component: require.resolve(
+        "./src/components/catalog/ComponentPreviewCardsSection.tsx"
+      ),
+      context: {
+        componentsArray: componentsArray,
+        githubMap: githubResultMap,
+        searchQuery: [category],
+      },
+    });
+  });
+
   createPage({
     path: `compose-catalog`,
     component: require.resolve(
@@ -194,6 +215,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     context: {
       componentsArray: componentsArray,
       githubMap: githubResultMap,
+      searchQuery: [],
     },
   });
 
@@ -205,6 +227,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     context: {
       componentsArray: componentsArray,
       githubMap: githubResultMap,
+      searchQuery: [],
     },
   });
 

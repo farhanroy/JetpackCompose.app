@@ -24,6 +24,7 @@ export interface ComponentPreviewCardsSectionProps extends RouteComponentProps {
       }
     ];
     githubMap: any;
+    searchQuery: [string];
   };
 }
 
@@ -52,14 +53,21 @@ export default function ComponentPreviewCardsSection(
       return firstGihubStars > secondGihubStars ? -1 : 1;
     }
   );
+  const pageTitle =
+    props.pageContext.searchQuery.length < 1
+      ? "Compose Catalog: Find the most popular Jetpack Compose libraries, tools and examples"
+      : `Popular ${props.pageContext.searchQuery} libraries, tools and examples for Jetpack Compose`;
+
+  useEffect(() => {
+    if (props.pageContext.searchQuery.length) {
+      setSearchQuery(props.pageContext.searchQuery);
+    }
+  }, []);
 
   return (
     <>
       <Helmet>
-        <title>
-          Compose Catalog: Find the most popular Jetpack Compose libraries,
-          tools and examples
-        </title>
+        <title>{pageTitle}</title>
         <meta
           name="description"
           content="Compose Catalog: Discover the most popular Jetpack Compose libraries, tools and examples!"
@@ -69,10 +77,7 @@ export default function ComponentPreviewCardsSection(
           property="twitter:url"
           content="https://jetpackcompose.app/compose-catalog"
         />
-        <meta
-          property="twitter:title"
-          content="Compose Catalog: Discover the most popular Jetpack Compose libraries, tools and examples!"
-        />
+        <meta property="twitter:title" content={pageTitle} />
         <meta
           property="twitter:description"
           content="Compose Catalog: Discover the most popular Jetpack Compose libraries, tools and examples!"
@@ -99,6 +104,7 @@ export default function ComponentPreviewCardsSection(
                 <ComponentsSearchBar
                   onChangeHandler={setSearchQuery}
                   componentCategories={uniqueComponentCategories.sort()}
+                  searchQuery={searchQuery}
                 />
               </Grid>
               <Grid item xs={12} lg={12}>

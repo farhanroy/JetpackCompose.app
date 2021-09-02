@@ -1,7 +1,4 @@
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import Chip from "@material-ui/core/Chip";
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
 import {
   createMuiTheme,
   makeStyles,
@@ -14,6 +11,7 @@ import TextField from "@material-ui/core/TextField";
 interface ComponentsSearchBarProps {
   onChangeHandler: (value: string[]) => void;
   componentCategories: string[];
+  searchQuery: string[];
 }
 
 export default function ComponentsSearchBar(props: ComponentsSearchBarProps) {
@@ -32,8 +30,10 @@ export default function ComponentsSearchBar(props: ComponentsSearchBarProps) {
           id="tags-outlined"
           options={props.componentCategories}
           getOptionLabel={(option) => option}
+          value={props.searchQuery}
           onChange={(event, value, reason, details) => {
             let valueArray = value.map((elem) => elem);
+            console.log("onChange " + valueArray);
             props.onChangeHandler(valueArray);
           }}
           renderInput={(params) => (
