@@ -92,7 +92,7 @@ export default function IfThisThenThatComponent(
           />
         </Helmet>
         <main>
-          <Grid container className={classes.root} spacing={2}>
+          <Grid container className={classes.root}>
             <Grid item xs={12} lg={6} className={classes.firstColumn}>
               <IfThisThenThanColumnComponent
                 prefix="If you used..."
