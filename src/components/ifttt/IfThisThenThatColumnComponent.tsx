@@ -29,137 +29,140 @@ const theme = createMuiTheme({
   },
 });
 
-export const IfThisThenThanColumnComponent: FunctionComponent<IfThisThenThanColumnComponentProps> = (
-  props
-) => {
-  const classes = useStyles();
-  const classicAndroid = Array.from(props.map.keys());
-  const breakpointUpLg: boolean = useMediaQuery(theme.breakpoints.up("lg"));
+export const IfThisThenThanColumnComponent: FunctionComponent<IfThisThenThanColumnComponentProps> =
+  (props) => {
+    const classes = useStyles();
+    const classicAndroid = Array.from(props.map.keys());
+    const breakpointUpLg: boolean = useMediaQuery(theme.breakpoints.up("lg"));
 
-  return (
-    <>
-      <Box display="flex" flexDirection="column" className={classes.boxCenter}>
-        <Box>
-          <Typography
-            variant="h4"
-            align="center"
-            className={getTypographyClass(props.componentType, classes)}
-          >
-            {props.prefix}
-          </Typography>
-        </Box>
-        {props.componentType === IfThisThenThatColumnComponentType.KEY ? (
-          <Box className={classes.autocompleteBox}>
-            <ThemeProvider theme={theme}>
-              <Autocomplete
-                id="combo-box-demo"
-                value={props.selectedKey}
-                options={classicAndroid}
-                classes={{
-                  option: classes.dropdownOptions,
-                }}
-                onInputChange={(event, newInputValue) => {
-                  props.handleChange(newInputValue);
-                  if (
-                    (props.selectedKey !== newInputValue &&
-                      validSelectedKey(newInputValue, props.map)) ||
-                    newInputValue === ""
-                  ) {
-                    navigate(
-                      "/What-is-the-equivalent-of-" +
-                        newInputValue +
-                        "-in-Jetpack-Compose"
-                    );
-                  }
-                }}
-                getOptionLabel={(option) => option}
-                renderInput={(params) => (
-                  <TextField
-                    {...params}
-                    variant="standard"
-                    placeholder="<Type>"
-                    InputProps={{
-                      ...params.InputProps,
-                      classes: {
-                        input: classes.inputTextField,
-                      },
-                    }}
-                  />
-                )}
-              />
-            </ThemeProvider>
-          </Box>
-        ) : (
+    return (
+      <>
+        <Box
+          display="flex"
+          flexDirection="column"
+          className={classes.boxCenter}
+        >
           <Box>
             <Typography
               variant="h4"
               align="center"
-              className={classes.composableValue}
+              className={getTypographyClass(props.componentType, classes)}
             >
-              {!validSelectedKey(props.selectedKey, props.map) ? (
-                breakpointUpLg ? (
-                  <div>
-                    <span role="img" aria-label="Pointing in Left Direction">
-                      👈
-                    </span>
-                  </div>
-                ) : (
-                  <div>
-                    <span role="img" aria-label="Pointing in Up Direction">
-                      ☝️
-                    </span>
-                  </div>
-                )
-              ) : (
-                props.map.get(props.selectedKey)?.composableName
-              )}
+              {props.prefix}
             </Typography>
           </Box>
-        )}
-        <Box>
-          <Typography
-            variant="h4"
-            align="center"
-            className={getTypographyClass(props.componentType, classes)}
-          >
-            {props.suffix}
-          </Typography>
-        </Box>
-
-        {props.componentType === IfThisThenThatColumnComponentType.VALUE &&
-        validSelectedKey(props.selectedKey, props.map) ? (
-          <>
-            <Box className={classes.linkSection}>
-              <Link
-                variant="overline"
-                className={classes.link}
-                href={props.map.get(props.selectedKey)?.composableGithubLink}
-                target="_blank"
-              >
-                {props.map.get(props.selectedKey)?.composableGithubLink === ""
-                  ? "⌛ Example coming soon! ⌛"
-                  : "🤩 Example to help you get started 🤩"}
-              </Link>
+          {props.componentType === IfThisThenThatColumnComponentType.KEY ? (
+            <Box className={classes.autocompleteBox}>
+              <ThemeProvider theme={theme}>
+                <Autocomplete
+                  id="combo-box-demo"
+                  value={props.selectedKey}
+                  options={classicAndroid}
+                  classes={{
+                    option: classes.dropdownOptions,
+                  }}
+                  onInputChange={(event, newInputValue) => {
+                    props.handleChange(newInputValue);
+                    if (
+                      (props.selectedKey !== newInputValue &&
+                        validSelectedKey(newInputValue, props.map)) ||
+                      newInputValue === ""
+                    ) {
+                      navigate(
+                        "/What-is-the-equivalent-of-" +
+                          newInputValue +
+                          "-in-Jetpack-Compose"
+                      );
+                    }
+                  }}
+                  getOptionLabel={(option) => option}
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      variant="standard"
+                      placeholder="<Type>"
+                      InputProps={{
+                        ...params.InputProps,
+                        classes: {
+                          input: classes.inputTextField,
+                        },
+                      }}
+                    />
+                  )}
+                />
+              </ThemeProvider>
             </Box>
-
+          ) : (
             <Box>
-              <Link
-                variant="overline"
-                className={classes.link}
-                href={props.map.get(props.selectedKey)?.officialDocsLink}
-                target="_blank"
+              <Typography
+                variant="h4"
+                align="center"
+                className={classes.composableValue}
               >
-                Official Docs
-              </Link>
+                {!validSelectedKey(props.selectedKey, props.map) ? (
+                  breakpointUpLg ? (
+                    <div>
+                      <span role="img" aria-label="Pointing in Left Direction">
+                        👈
+                      </span>
+                    </div>
+                  ) : (
+                    <div>
+                      <span role="img" aria-label="Pointing in Up Direction">
+                        ☝️
+                      </span>
+                    </div>
+                  )
+                ) : (
+                  props.map.get(props.selectedKey)?.composableName
+                )}
+              </Typography>
             </Box>
-          </>
-        ) : (
-          <></>
-        )}
-      </Box>
-    </>
-  );
-};
+          )}
+          <Box>
+            <Typography
+              variant="h4"
+              align="center"
+              className={getTypographyClass(props.componentType, classes)}
+            >
+              {props.suffix}
+            </Typography>
+          </Box>
+
+          {props.componentType === IfThisThenThatColumnComponentType.VALUE &&
+          validSelectedKey(props.selectedKey, props.map) ? (
+            <>
+              <Box className={classes.linkSection}>
+                <Link
+                  variant="overline"
+                  className={classes.link}
+                  href={props.map.get(props.selectedKey)?.composableGithubLink}
+                  target="_blank"
+                >
+                  {props.map.get(props.selectedKey)?.composableGithubLink === ""
+                    ? "⌛ Example coming soon! ⌛"
+                    : "🤩 Example to help you get started 🤩"}
+                </Link>
+              </Box>
+
+              <Box>
+                <Link
+                  variant="overline"
+                  className={classes.link}
+                  href={props.map.get(props.selectedKey)?.officialDocsLink}
+                  target="_blank"
+                >
+                  Official Docs
+                </Link>
+              </Box>
+            </>
+          ) : (
+            <></>
+          )}
+        </Box>
+      </>
+    );
+  };
 
 function getTypographyClass(
   componentType: IfThisThenThatColumnComponentType,
@@ -196,7 +199,7 @@ export const useStyles = makeStyles<Theme>((theme: Theme) => ({
     marginBottom: 100,
     marginTop: 100,
     fontWeight: "bold",
-    fontFamily: "Roboto",
+    fontFamily: "Nunito Sans",
   },
   typographyValue: {
     fontSize: 50,
@@ -208,7 +211,7 @@ export const useStyles = makeStyles<Theme>((theme: Theme) => ({
     },
     color: "#558b2f",
     fontWeight: "bolder",
-    fontFamily: "Roboto",
+    fontFamily: "Nunito Sans",
   },
   linkSection: {
     marginTop: "10%",
@@ -218,7 +221,7 @@ export const useStyles = makeStyles<Theme>((theme: Theme) => ({
     [theme.breakpoints.down("md")]: {
       fontSize: 14,
     },
-    fontFamily: "Playfair Display",
+    fontFamily: "Nunito Sans",
     color: "#33691e",
   },
   autocompleteBox: {
@@ -258,6 +261,6 @@ export const useStyles = makeStyles<Theme>((theme: Theme) => ({
     [theme.breakpoints.down("sm")]: {
       fontSize: 30,
     },
-    fontFamily: "Playfair Display",
+    fontFamily: "Nunito Sans",
   },
 }));
