@@ -1,1 +1,5 @@
-exports.shouldUpdateScroll = () => false
+import "./defaultStyle.css";
+
+export function shouldUpdateScroll() {
+  return false;
+}
