@@ -121,7 +121,7 @@ const useStyles = makeStyles({
       fontSize: 16,
     },
     "& a": {
-      color: "#81c1eb",
+      color: "#4285F4",
     },
   },
   answer: {
@@ -130,7 +130,7 @@ const useStyles = makeStyles({
     color: "#222",
     "& a": {
       color: "#FFFFFF",
-      background: "#81c1eb",
+      background: "#4285F4",
       padding: "5px",
       textDecoration: "none",
     },

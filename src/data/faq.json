@@ -17,7 +17,7 @@
   },
   {
     "question": "Where can I see examples to learn about Jetpack Compose? <span id='contribution'>(Edits by <a href='https://twitter.com/brettbestaus' target='_blank'>Brett Best</a>)</span>",
-    "answer": "<p>If you haven't already noticed, here is another shameless 🔌- <a target='_blank' href='https://github.com/vinaygaba/Learn-Jetpack-Compose-By-Example'>Learn Jetpack Compose By Example</a></p><p>Another project that is worth checking out is <a target='_blank' href='https://github.com/hitherejoe/ComposeAcademy-Playground '>Compose Academy</a></p><p>You should also check out the <a target='_blank' href='https://github.com/android/compose-samples'>official samples</a> that are a great way to learn more about Compose.</p><p>Lastly, consider going through the <a target='_blank' href='https://developer.android.com/courses/pathways/compose'>Jetpack Compose Pathway</a>.</p>"
+    "answer": "<p>If you haven't already noticed, here is another shameless 🔌- <a target='_blank' href='https://github.com/vinaygaba/Learn-Jetpack-Compose-By-Example'>Learn Jetpack Compose By Example</a></p><p>You should also check out the <a target='_blank' href='https://github.com/android/compose-samples'>official samples</a> that are a great way to learn more about Compose.</p><p>Lastly, consider going through the <a target='_blank' href='https://developer.android.com/courses/pathways/compose'>Jetpack Compose Pathway</a>.</p>"
   },
   {
     "question": "How do I learn about the equivalent API for common Android tasks in Jetpack Compose?",
