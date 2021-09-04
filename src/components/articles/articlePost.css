@@ -18,7 +18,7 @@
 }
 
 .para {
-  font-size: 19px;
+  font-size: 20px;
   margin-bottom: 32px;
   font-family: "Nunito Sans";
   font-weight: 400;
@@ -73,6 +73,7 @@ blockquote .para {
   max-height: 60vh;
   display: block;
   margin: 0 auto;
+  margin-bottom: 32px;
   border-radius: 8px;
 }
 
