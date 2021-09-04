@@ -94,3 +94,15 @@ pre[class*="language-"] {
   margin-left: auto;
   margin-right: auto;
 }
+
+.footer {
+  margin-top: "2%";
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  margin-bottom: "0px";
+  bottom: "0px";
+}

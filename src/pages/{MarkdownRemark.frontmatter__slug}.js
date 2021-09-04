@@ -3,6 +3,7 @@ import Avatar from "@material-ui/core/Avatar";
 import Container from "@material-ui/core/Container";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
+import JetpackComposeAppFooter from "../components/core/JetpackComposeAppFooter";
 import NavigationBar from "../components/core/NavigationBar";
 import React from "react";
 require("prismjs/themes/prism-tomorrow.css");
@@ -51,6 +52,9 @@ export default function ArticlePost({
             />
           </div>
         </Container>
+        <div className="footer">
+          <JetpackComposeAppFooter />
+        </div>
       </main>
     </>
   );

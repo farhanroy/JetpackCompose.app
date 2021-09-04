@@ -87,8 +87,10 @@ export const ComponentPreviewCard: FunctionComponent<ComponentPreviewCardProps> 
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
+    transition: "transform .3s ease-in-out",
     "&:hover": {
       cursor: "pointer",
+      transform: "scale(1.03)",
     },
     borderRadius: 12,
   },
