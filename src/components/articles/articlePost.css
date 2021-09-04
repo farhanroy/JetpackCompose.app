@@ -26,13 +26,18 @@
 }
 
 blockquote .para {
-  /* background: #DFEBF6; */
-  font-size: 17px;
+  background-color: #eafff3;
+  font-size: 18px;
+  font-family: "Nunito Sans";
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 16px;
+  padding-right: 16px;
   margin-bottom: 16px;
-  border-left: 6px solid green;
+  color: #222222;
+  font-weight: 400;
+  border-left: 6px solid #3ddc84;
+  border-radius: 8px;
 }
 
 pre[class*="language-"] {
