@@ -10,18 +10,18 @@ There are 4 main sections in the website:
 <table align="center" style="width:100%">
     <tr>
         <td><img src="screenshots/catalog_poster.png"></td>
-        <td><a href="http://jetpackcompose.app/compose-catalog">Compose Catalog</a> - The most reliable source for finding the latest libraries, tools and & examples about Jetpack Compose.</td>
+        <td><a href="http://JetpackCompose.app/compose-catalog">Compose Catalog</a> - The most reliable source for finding the latest libraries, tools and & examples about Jetpack Compose.</td>
     </tr>
     <tr>
-        <td><a href="http://jetpackcompose.app/What-is-the-equivalent-of--in-Jetpack-Compose">Which Compose API to use?</a> - An IFTTT'esque tool that lets you enter an API/Widget from classic Android and makes a recommendation for the corresponding API to use in Jetpack Compose.</td>
+        <td><a href="http://JetpackCompose.app/What-is-the-equivalent-of--in-Jetpack-Compose">Which Compose API to use?</a> - An IFTTT'esque tool that lets you enter an API/Widget from classic Android and makes a recommendation for the corresponding API to use in Jetpack Compose.</td>
         <td><img src="screenshots/ifttt_poster.png"></td>
     </tr>
     <tr>
         <td><img src="screenshots/quick_bites_poster.png"></td>
-        <td><a href="http://jetpackcompose.app/quick-bites">Compose Quick Bites</a> - Easy-to-consume bite sized content about the core concepts of Jetpack Compose.</td>
+        <td><a href="http://JetpackCompose.app/quick-bites">Compose Quick Bites</a> - Easy-to-consume bite sized content about the core concepts of Jetpack Compose.</td>
     </tr>
     <tr>
-        <td><a href="http://jetpackcompose.app/faq">FAQ's</a> - The most common questions about Compose answered with links to relevant sources.</td>
+        <td><a href="http://JetpackCompose.app/faq">FAQ's</a> - The most common questions about Compose answered with links to relevant sources.</td>
         <td><img src="screenshots/faq_poster.png"></td>
     </tr>
 </table>
@@ -82,7 +82,6 @@ lightweight so that anyone can contribute.
 Develop - run with the `GITHUB_TOKEN=<TOKEN_FROM_STEP_1> gatsby develop` command
 
 Build - run with `GITHUB_TOKEN=<TOKEN_FROM_STEP_1> gatsby build` and then `gatsby serve`
-
 
 ## Contributing
 

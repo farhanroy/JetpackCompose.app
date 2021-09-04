@@ -35,6 +35,10 @@ blockquote .para {
   border-left: 6px solid green;
 }
 
+pre[class*="language-"] {
+  border-radius: 8px;
+}
+
 .postHeaderContainer {
   margin-bottom: 96px;
   margin-top: 64px;
