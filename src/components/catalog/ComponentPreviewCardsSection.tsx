@@ -75,7 +75,7 @@ export default function ComponentPreviewCardsSection(
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://jetpackcompose.app/compose-catalog"
+          content="https://JetpackCompose.app/compose-catalog"
         />
         <meta property="twitter:title" content={pageTitle} />
         <meta

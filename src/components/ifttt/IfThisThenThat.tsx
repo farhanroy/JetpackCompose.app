@@ -77,7 +77,7 @@ export default function IfThisThenThatComponent(
             content="Learn more about using Jetpack Compose in Android. How does Jetpack Compose compare to the existing Android UI Toolkit?"
           />
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://jetpackcompose.app/" />
+          <meta property="twitter:url" content="https://JetpackCompose.app/" />
           <meta
             property="twitter:title"
             content="What's the equivalent API in Jetpack Compose?"

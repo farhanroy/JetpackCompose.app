@@ -5,7 +5,7 @@ const { createHttpLink } = require(`apollo-link-http`);
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.jetpackcompose.app`,
+    siteUrl: `https://www.JetpackCompose.app`,
   },
   plugins: [
     {
@@ -70,7 +70,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.jetpackcompose.app`,
+        siteUrl: `https://www.JetpackCompose.app`,
       },
     },
     {
