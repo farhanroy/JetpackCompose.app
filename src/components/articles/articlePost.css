@@ -35,14 +35,35 @@ blockquote .para {
   border-left: 6px solid green;
 }
 
-.title {
+.postHeaderContainer {
+  margin-bottom: 96px;
+  margin-top: 64px;
+  text-align: center;
+}
+
+.postHeader {
   font-size: 48px;
   font-weight: bold;
   font-family: "Nunito Sans";
   color: #222222;
-  margin-bottom: 96px;
-  margin-top: 64px;
-  text-align: center;
+}
+
+.postSubheader {
+  font-size: 14;
+  font-family: "Merriweather";
+  font-weight: 100;
+  color: #444444;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.postSubheader a {
+  color: #4285f4;
+  text-decoration: none;
+  margin-left: 8px;
+  margin-right: 6px;
 }
 
 .heroImage {

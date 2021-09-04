@@ -1,4 +1,5 @@
 import "../components/articles/articlePost.css";
+import Avatar from "@material-ui/core/Avatar";
 import Container from "@material-ui/core/Container";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
@@ -32,8 +33,17 @@ export default function ArticlePost({
         <NavigationBar />
         <Container maxWidth="md">
           <div className="blog-post">
-            <div className="title">{frontmatter.title}</div>
-            <h2>{frontmatter.date}</h2>
+            <div className="postHeaderContainer">
+              <div className="postHeader">{frontmatter.title}</div>
+              <div className="postSubheader">
+                <Avatar className="avatar" src={frontmatter.authorImageUrl} />
+                <a href={frontmatter.authorProfileUrl} target="_blank">
+                  {frontmatter.authorName + " "}
+                </a>
+                {"  on "}
+                {frontmatter.date}
+              </div>
+            </div>
             <img src={frontmatter.heroImageUrl} className="heroImage"></img>
             <div
               className="blog-post-content"
@@ -52,8 +62,12 @@ export const pageQuery = graphql`
       html
       frontmatter {
         slug
+        date(formatString: "MMMM DD, YYYY")
         title
         description
+        authorName
+        authorImageUrl
+        authorProfileUrl
         heroImageUrl
       }
     }
