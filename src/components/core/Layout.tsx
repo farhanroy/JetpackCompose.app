@@ -18,6 +18,10 @@ export default function Layout(props: LayoutProps) {
   return (
     <>
       <Helmet>
+        <script
+          type="text/javascript"
+          src="./newsletter/mailer_lite.js"
+        ></script>
         <title>{props.pageTitle}</title>
         <meta name="description" content={props.pageDescription} />
         <meta property="twitter:card" content="summary_large_image" />
@@ -36,7 +40,12 @@ export default function Layout(props: LayoutProps) {
             maxWidth={props.maxWidth}
             className={classes.pageContainer}
           >
-            {props.children}
+            <div
+              className="ml-form-embed"
+              data-account="3416353:s2x4s4n9s9"
+              data-form="4659415:t3j4q1"
+            ></div>
+            {/* {props.children} */}
           </Container>
           <div className={classes.footer}>
             <JetpackComposeAppFooter />
