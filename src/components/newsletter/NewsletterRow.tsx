@@ -1,15 +1,40 @@
+import addToMailchimp from "gatsby-plugin-mailchimp";
 import { Button, CircularProgress } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, FormEvent } from "react";
 
 interface NewsletterRowProps {}
 
 export default function NewsletterRow(props: NewsletterRowProps) {
   const classes = useStyles();
-
   const [signupSuccessful, setSignupSuccessful] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [email, setEmail] = useState<string>("");
+  const [name, setName] = useState<string>("");
+
+  const handleSubmit = async (event: any): Promise<void> => {
+    event.preventDefault();
+    try {
+      const currentUrl = window.location.href;
+      if (email.length && validEmail(email)) {
+        const result = await addToMailchimp(email, {
+          NAME: name,
+          SIGNUP_URL: currentUrl,
+        });
+        if (result.result === "success") {
+          setSignupSuccessful(true);
+        } else {
+          setSignupSuccessful(false);
+        }
+        setLoading(false);
+      }
+    } catch (error) {
+      setSignupSuccessful(false);
+      setLoading(false);
+    }
+  };
+
   return (
     <div className={classes.root}>
       {loading ? (
@@ -26,26 +51,27 @@ export default function NewsletterRow(props: NewsletterRowProps) {
           <form className={classes.form} noValidate autoComplete="off">
             <TextField
               id="name"
-              label="First Name"
+              label="Name"
               className={classes.input}
               variant="filled"
+              onChange={(event) => {
+                setName(event.target.value);
+              }}
             />
             <TextField
               id="address"
               label="Email Address"
               className={classes.input}
               variant="filled"
+              error={!validEmail(email)}
+              onChange={(event) => {
+                setEmail(event.target.value);
+              }}
             />
             <Button
               variant="contained"
               className={classes.subscribeButton}
-              onClick={() => {
-                setLoading(true);
-                setTimeout(() => {
-                  setLoading(false);
-                  setSignupSuccessful(true);
-                }, 5000);
-              }}
+              onClick={handleSubmit}
             >
               Subscribe
             </Button>
@@ -64,6 +90,12 @@ export default function NewsletterRow(props: NewsletterRowProps) {
       )}
     </div>
   );
+
+  function validEmail(email: string): boolean {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return email.length === 0 || re.test(String(email).toLowerCase());
+  }
 }
 
 const useStyles = makeStyles({
