@@ -12,7 +12,7 @@ import { RouteComponentProps } from "@reach/router";
 function QuickBitesComponent(props: RouteComponentProps) {
   const classes = useStyles();
   return (
-    <>
+    <div className={classes.root}>
       <Helmet>
         <title>Jetpack Compose Quick Bites</title>
         <meta
@@ -36,7 +36,7 @@ function QuickBitesComponent(props: RouteComponentProps) {
       </Helmet>
       <main>
         <NavigationBar />
-        <Grid container>
+        <Grid container className={classes.container}>
           <Grid item xs={12} md={12}>
             <Grid container justify="center">
               <Grid key={"header"} item xs={12} md={4}>
@@ -75,11 +75,18 @@ function QuickBitesComponent(props: RouteComponentProps) {
           <JetpackComposeAppFooter />
         </div>
       </main>
-    </>
+    </div>
   );
 }
 
 const useStyles = makeStyles({
+  root: {
+    position: "relative",
+    minHeight: "100vh",
+  },
+  container: {
+    paddingBottom: "11.5rem",
+  },
   issueTitle: {
     fontSize: 25,
     fontFamily: "Nunito Sans",
@@ -89,14 +96,10 @@ const useStyles = makeStyles({
   },
   footer: {
     marginTop: "2%",
-    height: "20vh",
+    height: "11.5rem",
     width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    background: "#000000",
-    marginBottom: "0px",
-    bottom: "0px",
+    bottom: 0,
+    position: "absolute",
   },
 });
 

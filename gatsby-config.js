@@ -86,6 +86,8 @@ module.exports = {
                 paragraph: "para",
                 link: "url",
                 image: "img",
+                inlineCode: "inline",
+                listItem: "listElement",
               },
             },
           },

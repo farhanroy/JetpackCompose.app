@@ -178,12 +178,8 @@ const useStyles = makeStyles({
   },
   footer: {
     marginTop: "2%",
-    height: "20vh",
+    height: "11.5rem",
     width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    background: "#000000",
     marginBottom: "0px",
     bottom: "0px",
   },

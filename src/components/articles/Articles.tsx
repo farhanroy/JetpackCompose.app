@@ -10,6 +10,7 @@ require("prismjs/themes/prism-tomorrow.css");
 import React from "react";
 import { Grid } from "@material-ui/core";
 import { transform } from "typescript";
+import NewsletterRow from "../newsletter/NewsletterRow";
 
 export default function Articles({
   data, // this prop will be injected by the GraphQL query below.
@@ -18,11 +19,19 @@ export default function Articles({
   return (
     <>
       <Helmet>
-        <title></title>
+        <title>
+          Jetpack Compose Articles | JetpackCompose.app by Vinay Gaba
+        </title>
         <meta name="description" content="" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://jetpackcompose.app/faq" />
-        <meta property="twitter:title" content="" />
+        <meta
+          property="twitter:url"
+          content="https://JetpackCompose.app/articles"
+        />
+        <meta
+          property="twitter:title"
+          content="Jetpack Compose Articles | JetpackCompose.app by Vinay Gaba"
+        />
         <meta property="twitter:description" content="" />
         <meta property="twitter:image" content="" />
       </Helmet>
@@ -45,6 +54,7 @@ export default function Articles({
                       <Link
                         to={edge.node.frontmatter.slug}
                         className={classes.blogLink}
+                        partiallyActive={true}
                       >
                         <ArticleCard
                           title={edge.node.frontmatter.title}
@@ -58,6 +68,9 @@ export default function Articles({
                 );
               })}
             </Grid>
+            <div className={classes.newsletter}>
+              <NewsletterRow />{" "}
+            </div>
           </Container>
           <div className={classes.footer}>
             <JetpackComposeAppFooter />
@@ -74,7 +87,7 @@ const useStyles = makeStyles({
     minHeight: "100vh",
   },
   articleContainer: {
-    paddingBottom: "10rem",
+    paddingBottom: "11.5rem",
   },
   articleGridContainer: {
     marginBottom: "96px",
@@ -95,16 +108,15 @@ const useStyles = makeStyles({
       transform: "scale(1.03)",
     },
   },
+  newsletter: {
+    marginBottom: 64,
+  },
   footer: {
     marginTop: "2%",
-    height: "10rem",
+    height: "11.5rem",
     width: "100%",
-    justifyContent: "center",
-    alignItems: "center",
-    background: "#000000",
     bottom: 0,
     position: "absolute",
-    display: "flex",
   },
 });
 

@@ -5,6 +5,7 @@ import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import JetpackComposeAppFooter from "../components/core/JetpackComposeAppFooter";
 import NavigationBar from "../components/core/NavigationBar";
+import NewsletterRow from "../components/newsletter/NewsletterRow";
 import React from "react";
 require("prismjs/themes/prism-tomorrow.css");
 
@@ -32,25 +33,24 @@ export default function ArticlePost({
       </Helmet>
       <main>
         <NavigationBar />
-        <Container maxWidth="md">
-          <div className="blog-post">
-            <div className="postHeaderContainer">
-              <div className="postHeader">{frontmatter.title}</div>
-              <div className="postSubheader">
-                <Avatar className="avatar" src={frontmatter.authorImageUrl} />
-                <a href={frontmatter.authorProfileUrl} target="_blank">
-                  {frontmatter.authorName + " "}
-                </a>
-                {"  on "}
-                {frontmatter.date}
-              </div>
+        <Container maxWidth="md" className="blog-post-container">
+          <div className="postHeaderContainer">
+            <div className="postHeader">{frontmatter.title}</div>
+            <div className="postSubheader">
+              <Avatar className="avatar" src={frontmatter.authorImageUrl} />
+              <a href={frontmatter.authorProfileUrl} target="_blank">
+                {frontmatter.authorName + " "}
+              </a>
+              {"  on "}
+              {frontmatter.date}
             </div>
-            <img src={frontmatter.heroImageUrl} className="heroImage"></img>
-            <div
-              className="blog-post-content"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
           </div>
+          <img src={frontmatter.heroImageUrl} className="heroImage"></img>
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+          <NewsletterRow />
         </Container>
         <div className="footer">
           <JetpackComposeAppFooter />

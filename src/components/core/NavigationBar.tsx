@@ -64,7 +64,7 @@ function NavigationBar(props: IProps) {
             value="/What-is-the-equivalent-of--in-Jetpack-Compose"
           />
           <Tab
-            label="FAQ's"
+            label="FAQ"
             {...a11yProps(1)}
             className={classes.tab}
             value="/faq"
@@ -109,12 +109,13 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
   tabsIndicator: {
-    backgroundColor: "#ccff90",
+    backgroundColor: "#4285F4",
   },
   tab: {
     color: "#222222",
     fontSize: 15,
     fontWeight: "bolder",
+    fontFamily: "Nunito Sans",
   },
   typography: {
     color: "#FFFFFF",

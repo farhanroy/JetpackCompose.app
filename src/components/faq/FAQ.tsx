@@ -39,7 +39,7 @@ export default function FAQPageComponent(props: FAQPageComponentProps) {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://JetpackCompose.app/faq" />
+        <meta property="twitter:url" content="https://jetpackcompose.app/faq" />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <meta
@@ -137,12 +137,8 @@ const useStyles = makeStyles({
   },
   footer: {
     marginTop: "2%",
-    height: "20vh",
+    height: "11.5rem",
     width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    background: "#000000",
     marginBottom: "0px",
     bottom: "0px",
   },

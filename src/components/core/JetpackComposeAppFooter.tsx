@@ -24,9 +24,11 @@ export default function JetpackComposeAppFooter() {
           href="https://github.com/vinaygaba/Learn-Jetpack-Compose-By-Example"
           target="_blank"
         >
-          Powered by <span className={classes.link}>Learn Jetpack Compose By Example</span>
+          Powered by{" "}
+          <span className={classes.link}>Learn Jetpack Compose By Example</span>
         </Link>
       </Box>
+      <Box className={classes.footerText}>© 2021 All Rights Reserved</Box>
     </Box>
   );
 }
@@ -34,16 +36,18 @@ export default function JetpackComposeAppFooter() {
 const useStyles = makeStyles({
   root: {
     width: "100%",
+    height: "100%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    background: "#000000",
   },
   footerText: {
     fontSize: 16,
     color: "#FFFFFF",
-    fontFamily: "Playfair Display",
+    fontFamily: "Nunito Sans",
   },
   link: {
-      color: "#ccff90"
-  }
+    color: "#4285f4",
+  },
 });

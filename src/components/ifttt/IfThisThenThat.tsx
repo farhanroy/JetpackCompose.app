@@ -151,11 +151,7 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
   footer: {
-    height: "20vh",
+    height: "11.5rem",
     width: "100%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    background: "#000000",
   },
 });
