@@ -10,6 +10,7 @@ interface LayoutProps {
   pageTitle?: string;
   pageDescription?: string;
   pageImageUrl?: string;
+  pageSlug?: string;
   children?: React.ReactNode;
 }
 
@@ -27,7 +28,7 @@ export default function Layout(props: LayoutProps) {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://JetpackCompose.app/TODO"
+          content={`https://JetpackCompose.app/${props.pageSlug}`}
         />
         <meta property="twitter:title" content={props.pageTitle} />
         <meta property="twitter:description" content={props.pageDescription} />
@@ -40,12 +41,7 @@ export default function Layout(props: LayoutProps) {
             maxWidth={props.maxWidth}
             className={classes.pageContainer}
           >
-            <div
-              className="ml-form-embed"
-              data-account="3416353:s2x4s4n9s9"
-              data-form="4659415:t3j4q1"
-            ></div>
-            {/* {props.children} */}
+            {props.children}
           </Container>
           <div className={classes.footer}>
             <JetpackComposeAppFooter />
