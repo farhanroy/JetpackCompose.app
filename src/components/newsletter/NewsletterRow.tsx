@@ -19,16 +19,20 @@ export default function NewsletterRow(props: NewsletterRowProps) {
     try {
       const currentUrl = window.location.href;
       if (email.length && validEmail(email)) {
+        setLoading(true);
         const result = await addToMailchimp(email, {
           NAME: name,
           SIGNUP_URL: currentUrl,
         });
         if (result.result === "success") {
-          setSignupSuccessful(true);
+          setTimeout(() => {
+            setSignupSuccessful(true);
+            setLoading(false);
+          }, 2000);
         } else {
           setSignupSuccessful(false);
+          setLoading(false);
         }
-        setLoading(false);
       }
     } catch (error) {
       setSignupSuccessful(false);
