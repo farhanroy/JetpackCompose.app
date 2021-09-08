@@ -64,6 +64,12 @@ function NavigationBar(props: IProps) {
             value="/What-is-the-equivalent-of--in-Jetpack-Compose"
           />
           <Tab
+            label="Articles"
+            {...a11yProps(1)}
+            className={classes.tab}
+            value="/articles"
+          />
+          <Tab
             label="FAQ"
             {...a11yProps(1)}
             className={classes.tab}
