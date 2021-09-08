@@ -30,6 +30,8 @@ export default function ArticlePost({
           content={frontmatter.description}
         />
         <meta property="twitter:image" content={frontmatter.heroImageUrl} />
+        <meta property="og:title" content={frontmatter.title} />
+        <meta property="og:image" content={frontmatter.heroImageUrl} />
       </Helmet>
       <main>
         <NavigationBar />
