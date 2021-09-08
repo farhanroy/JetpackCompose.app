@@ -6,7 +6,7 @@ description: "🍩 Learn how Jetpack Compose is able to be smart during recompos
 authorName: "Vinay Gaba"
 authorProfileUrl: "https://twitter.com/vinaygaba"
 authorImageUrl: "https://jetpackcompose.app/vinay_gaba_profile_picture.jpeg"
-heroImageUrl: "/articles/donut-hole-skipping/donut-hole-skipping-hero.png"
+heroImageUrl: "https://jetpackcompose.app/articles/donut-hole-skipping/donut-hole-skipping-hero.png"
 tags:
   - Recomposition
   - Donut-hole
