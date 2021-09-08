@@ -187,7 +187,7 @@ _Counter = 1 Only Button Scope and CustomText, & CustomText Scope are recomposed
 <br/>
 
 ![4](/articles/donut-hole-skipping/recomposition-donut-counter-2.png)
-_Counter = 1 Only Button Scope and CustomText, & CustomText Scope are recomposed. MyComponent, MyComponent Scope & Button are skipped from recomposition._
+_Counter = 2 Only Button Scope and CustomText, & CustomText Scope are recomposed. MyComponent, MyComponent Scope & Button are skipped from recomposition._
 <br/>
 
 Hopefully this visualization was clear to get the point across so I'm going to avoid adding more words to this already long post.
