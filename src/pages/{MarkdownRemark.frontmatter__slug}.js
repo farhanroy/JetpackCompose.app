@@ -31,6 +31,11 @@ export default function ArticlePost({
         />
         <meta property="twitter:image" content={frontmatter.heroImageUrl} />
         <meta property="og:title" content={frontmatter.title} />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={"https://JetpackCompose.app" + frontmatter.slug}
+        />
         <meta property="og:image" content={frontmatter.heroImageUrl} />
       </Helmet>
       <main>

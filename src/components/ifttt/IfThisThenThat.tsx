@@ -25,6 +25,17 @@ export default function IfThisThenThatComponent(
     setClassicAndroidValue(newValue);
   }
 
+  const description =
+    "Learn more about using Jetpack Compose in Android. How does Jetpack Compose compare to the existing Android UI Toolkit?";
+  const title = "What's the equivalent of ";
+  {
+    props.pageContext?.classicAndroid ? props.pageContext.classicAndroid : "";
+  }
+  {
+    (" ");
+  }
+  ("in Jetpack Compose?");
+
   let classicAndroidVsJetpackComposeMap = new Map<
     string,
     JetpackComposeMetadata
@@ -65,29 +76,25 @@ export default function IfThisThenThatComponent(
       <NavigationBar />
       <div className={classes.root}>
         <Helmet>
-          <title>
-            What's the equivalent of{" "}
-            {props.pageContext?.classicAndroid
-              ? props.pageContext.classicAndroid
-              : ""}{" "}
-            in Jetpack Compose?
-          </title>
+          <title>{title}</title>
           <meta
             name="description"
             content="Learn more about using Jetpack Compose in Android. How does Jetpack Compose compare to the existing Android UI Toolkit?"
           />
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://JetpackCompose.app/" />
-          <meta
-            property="twitter:title"
-            content="What's the equivalent API in Jetpack Compose?"
-          />
-          <meta
-            property="twitter:description"
-            content="Learn more about using Jetpack Compose in Android. How does Jetpack Compose compare to the existing Android UI Toolkit?"
-          />
+          <meta property="twitter:title" content={title} />
+          <meta property="twitter:description" content={description} />
           <meta
             property="twitter:image"
+            content="https://jetpackcompose.app/JetpackComposeIfThen_Preview_Image.png"
+          />
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={description} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://JetpackCompose.app/" />
+          <meta
+            property="og:image"
             content="https://jetpackcompose.app/JetpackComposeIfThen_Preview_Image.png"
           />
         </Helmet>

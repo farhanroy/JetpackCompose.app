@@ -87,6 +87,20 @@ export default function ComponentPreviewCardsSection(
           property="twitter:image"
           content="https://jetpackcompose.app/catalog_poster.png"
         />
+        <meta property="og:title" content={pageTitle} />
+        <meta
+          property="og:description"
+          content="Compose Catalog: Discover the most popular Jetpack Compose libraries, tools and examples!"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://JetpackCompose.app/compose-catalog"
+        />
+        <meta
+          property="og:image"
+          content="https://jetpackcompose.app/catalog_poster.png"
+        />
       </Helmet>
       <main>
         <NavigationBar />

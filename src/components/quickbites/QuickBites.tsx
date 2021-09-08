@@ -34,6 +34,20 @@ function QuickBitesComponent(props: RouteComponentProps) {
           property="twitter:image"
           content="https://jetpackcompose.app/quick_bites.png"
         />
+        <meta property="og:title" content="Jetpack Compose Quick Bites" />
+        <meta
+          property="og:description"
+          content="Learn Jetpack Compose with easy to consume bites of knowledge!"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://JetpackCompose.app/quick-bites"
+        />
+        <meta
+          property="og:image"
+          content="https://jetpackcompose.app/quick_bites.png"
+        />
       </Helmet>
       <main>
         <NavigationBar />
